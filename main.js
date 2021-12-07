@@ -27,7 +27,7 @@ Webcam.attach("#camera")
 
 console.log("ml5 version:",ml5.version);
 
-classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/OHfLoVvc4/model.json",modelLoaded);
+classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/g7oHCoAC_/model.json",modelLoaded);
 function modelLoaded(){
   console.log("model loaded");
 }
@@ -38,3 +38,4 @@ function speak(){
   var utterThis=new SpeechSynthesisUtterance(speak_data);
   synth.speak(utterThis)
 }
+
